@@ -1,11 +1,10 @@
 public class JackOLantern
 {
-    String[][] faceFeatures;
+    private String[][] faceFeatures;
 
     JackOLantern(String[][] faceFeatures)
     {
         this.faceFeatures = faceFeatures;
-        toString();
     }
 
     public void edit(String replace, int row, int column)
@@ -20,9 +19,9 @@ public class JackOLantern
         {
             for(int j = 0; j < this.faceFeatures[i].length; j++)
             {
-                pumpkin = pumpkin + this.faceFeatures[i][j];
+                pumpkin += this.faceFeatures[i][j];
             }
-            pumpkin = pumpkin + "\n";
+            pumpkin += "\n";
         }
         return pumpkin;
     }
